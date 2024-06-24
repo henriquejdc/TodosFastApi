@@ -1,5 +1,5 @@
-# fastapi_simple
-Projeto simples de fastapi de CEPs
+# TodosFastApi
+Projeto simples de CRUD de tarefas (Todos)
 
 
 **No terminal:**
@@ -31,4 +31,3 @@ python main.py --reload
 ``` 
 ENV_MODE='test' pytest tests/
 ```
-# TodosFastApi
