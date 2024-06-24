@@ -22,12 +22,13 @@ python -m pip install "pymongo[srv]"==3.6
 
 **Iniciar:**
 ```
+uvicorn main:app --reload
 python main.py --reload
 ```
 
 
 **Testes Unitários:**
 ``` 
-MONGO_DB_NAME='db_name'_test pytest tests/
+ENV_MODE='test' pytest tests/
 ```
 # TodosFastApi

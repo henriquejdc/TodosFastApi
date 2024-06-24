@@ -14,7 +14,7 @@ MONGO_CLUSTER = os.getenv('MONGO_CLUSTER')
 APP_NAME = os.getenv('APP_NAME')
 DATABASE = os.getenv('DATABASE')
 ENV_MODE = os.getenv('ENV_MODE', 'prod')
-collection_name = None
+collection_name = MockCollection()
 
 if ENV_MODE != 'test':
     # Construct the MongoDB URL
@@ -28,6 +28,3 @@ if ENV_MODE != 'test':
     DB = client[DATABASE]
 
     collection_name = DB['todo_collection']
-
-else:
-    collection_name = MockCollection()
